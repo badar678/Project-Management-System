@@ -1,0 +1,125 @@
+.client-reports {
+  padding: 20px;
+  background-color: #111c44;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: 'Montserrat', sans-serif;
+  margin: -20px;
+  height: 650px;
+  overflow-y: hidden;
+
+}
+
+/* === Header & Logout === */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.main-header h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.logout-btn {
+  background-color: #e53935;
+  color: white;
+  padding: 0.65rem 1.3rem;  /* Slightly larger padding */
+  font-size: 1.05rem;       /* Slightly larger text */
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+.logout-btn:hover {
+  background-color: #c62828;
+}
+/* === Header === */
+.client-reports h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* === Budget Cards === */
+.budget-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 15px 0;
+  margin-top: 50px;
+}
+
+.budget-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.05rem;
+  background-color: #232e4d;
+}
+
+.budget-card h4 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.budget-card p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* === Status Colors === */
+.budget-card.pending {
+  background-color: #ff6d00;
+}
+
+.budget-card.approved {
+  background-color: #2e7d32;
+}
+
+.budget-card.rejected {
+  background-color: #d50000;
+}
+
+/* === Charts Section === */
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 70px;
+  height: 300px;
+}
+
+.chart-card {
+  background-color: #232e4d;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chart-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+/* === Tooltip and Legends in Charts === */
+.recharts-tooltip-label,
+.recharts-tooltip-item,
+.recharts-legend-item-text {
+  color: #fff !important;
+  font-size: 0.9rem;
+}

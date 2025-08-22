@@ -1,0 +1,155 @@
+.client-dashboard {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #111c44;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  margin: -20px;
+}
+
+/* === Header & Logout === */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.main-header h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.logout-btn {
+  background-color: #e53935;
+  color: white;
+  padding: 0.65rem 1.3rem;  /* Slightly larger padding */
+  font-size: 1.05rem;       /* Slightly larger text */
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+.logout-btn:hover {
+  background-color: #c62828;
+}
+/* === Title === */
+.client-dashboard h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* === Form Styling === */
+.project-form {
+  background-color: #232e4d;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  display: grid;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.project-form input,
+.project-form textarea {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #1b254b;
+  color: #ffffff;
+  resize: none;
+}
+
+.project-form input::placeholder,
+.project-form textarea::placeholder {
+  color: #ccc;
+}
+
+.project-form button {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-form button:hover {
+  background-color: #388e3c;
+}
+
+/* === Project List Section === */
+.project-list {
+  background-color: transparent;
+  margin-top: 20px;
+}
+
+.project-list h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.project-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* === Individual Project Card === */
+.project-card {
+  background-color: #232e4d;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.project-card p {
+  margin: 0.25rem 0;
+}
+
+/* === Status Styles === */
+.status {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.status.approved {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.status.rejected {
+  background-color: #f44336;
+  color: #fff;
+}
